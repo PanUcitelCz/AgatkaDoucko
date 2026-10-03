@@ -5,6 +5,10 @@
     <!-- Nepárový tag pro nastavení viewportu, který zajišťuje správné zobrazení na různých zařízeních -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doučko Agátka</title> <!-- Název dokumentu, který vidíš v tabu prohlížeči-->
+    <script src="js/script.js" defer></script> <!-- Odkaz na externí JavaScriptový soubor -->
+    <!-- defer = načtení skriptu po načtení HTML dokumentu -->
+    <script src="js/NovejsiMetody.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <!-- Tělo dokumentu: Obsah stránky co vidí uživatel-->
 <body>
@@ -14,6 +18,14 @@
         Naše služby zahrnují individuální lek <!-- Zde je kontent toho tagu -->
     </p> <!-- Odstavec textu -->
     <!-- Co je uvnitř < > Jsou atributy tagu-->
-    <input type="password" placeholder="Zadejte své jméno"> <!-- Vstupní pole pro text s nápovědou -->
+    <input placeholder="Zadejte text" id="input"> <!-- Vstupní pole pro text s nápovědou -->
+    <button onclick="Add1()">Add 1</button> <!-- Tlačítko, které spouští JavaScriptovou funkci při kliknutí -->
+    <button onclick="Add2()">Add 2</button>
+    <button onclick="Add3()">Add 3</button>
+    <button onclick="Add4()">Add 4</button>
+    <button onclick="Del('')">Delete</button>
+    <button onclick="ColorBody()">Změň barvu</button>
+
+    <p id="output" class="output_pro_querySelector">KVD je nejlepší</p>
 </body>
 </html>
